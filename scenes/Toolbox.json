@@ -55,18 +55,12 @@
     },
     "current_program_scene": "3D Printers",
     "current_scene": "Test",
-    "current_transition": "Stinger NATRON",
+    "current_transition": "Logo-Swipe",
     "groups": [],
     "modules": {},
     "name": "Toolbox",
     "preview_locked": false,
     "quick_transitions": [
-        {
-            "duration": 300,
-            "hotkeys": [],
-            "id": 1,
-            "name": "Fade"
-        },
         {
             "duration": 300,
             "hotkeys": [],
@@ -76,14 +70,14 @@
         {
             "duration": 300,
             "hotkeys": [],
-            "id": 3,
-            "name": "Swipe"
+            "id": 7,
+            "name": "Logo-Swipe"
         },
         {
             "duration": 300,
             "hotkeys": [],
-            "id": 7,
-            "name": "Stinger NATRON"
+            "id": 8,
+            "name": "Fade"
         }
     ],
     "saved_projectors": [],
@@ -108,28 +102,243 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.TestPattern": [],
+                "libobs.show_scene_item.TestPattern": []
+            },
+            "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Starting Soon Banner",
+            "name": "Test",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "color1": 4281742649,
-                "color2": 4281742649,
-                "font": {
-                    "face": "Exo 2 Medium",
-                    "flags": 2,
-                    "size": 150,
-                    "style": "Italic"
-                },
-                "log_lines": 4,
-                "text": "STARTING SOON"
+                "custom_size": false,
+                "id_counter": 5,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": true,
+                        "name": "TestPattern",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Starting Soon Banner": [],
+                "libobs.hide_scene_item.Toolbox Logo 1080p": [],
+                "libobs.hide_scene_item.White": [],
+                "libobs.show_scene_item.Starting Soon Banner": [],
+                "libobs.show_scene_item.Toolbox Logo 1080p": [],
+                "libobs.show_scene_item.White": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Starting Soon",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 4,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": true,
+                        "name": "White",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": true,
+                        "name": "Toolbox Logo 1080p",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 4,
+                        "locked": true,
+                        "name": "Starting Soon Banner",
+                        "pos": {
+                            "x": 407.5,
+                            "y": 731.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Toolbox Logo 1080p",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "/srv/stream/toolbox/streamassets/assets/logo/toolbox_logo_center_1080.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "color_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "White",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "height": 1080,
+                "width": 1920
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "TestPattern",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "/srv/stream/toolbox/streamassets/assets/testimages/img_1920x1080_3x16bit_RGB_color_SMPTE_RP_219_2002.png",
+                "unload": true
             },
             "sync": 0,
             "volume": 1.0
@@ -150,7 +359,7 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Replicator",
+            "name": "Multec",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -159,39 +368,7 @@
             "settings": {
                 "clear_on_media_end": false,
                 "hw_decode": true,
-                "input": "http://replicator.tbbs.me/webcam/?action=stream",
-                "input_format": "mpjpeg",
-                "is_local_file": false
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "MediaSource.Restart": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "CTC",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "clear_on_media_end": false,
-                "hw_decode": true,
-                "input": "http://ctc.tbbs.me/webcam/?action=stream",
+                "input": "http://multec.tbbs.me/webcam/?action=stream",
                 "input_format": "mpjpeg",
                 "is_local_file": false
             },
@@ -334,7 +511,7 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Multec",
+            "name": "CTC",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -343,7 +520,39 @@
             "settings": {
                 "clear_on_media_end": false,
                 "hw_decode": true,
-                "input": "http://multec.tbbs.me/webcam/?action=stream",
+                "input": "http://ctc.tbbs.me/webcam/?action=stream",
+                "input_format": "mpjpeg",
+                "is_local_file": false
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Replicator",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "clear_on_media_end": false,
+                "hw_decode": true,
+                "input": "http://replicator.tbbs.me/webcam/?action=stream",
                 "input_format": "mpjpeg",
                 "is_local_file": false
             },
@@ -356,242 +565,27 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
+            "id": "text_ft2_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "TestPattern",
+            "name": "Starting Soon Banner",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/srv/stream/toolbox/streamassets/assets/testimages/img_1920x1080_3x16bit_RGB_color_SMPTE_RP_219_2002.png",
-                "unload": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "color_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "White",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "height": 1080,
-                "width": 1920
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Toolbox Logo 1080p",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "/srv/stream/toolbox/streamassets/assets/logo/toolbox_logo_center_1080.png"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Starting Soon Banner": [],
-                "libobs.hide_scene_item.Toolbox Logo 1080p": [],
-                "libobs.hide_scene_item.White": [],
-                "libobs.show_scene_item.Starting Soon Banner": [],
-                "libobs.show_scene_item.Toolbox Logo 1080p": [],
-                "libobs.show_scene_item.White": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Starting Soon",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 4,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "White",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Toolbox Logo 1080p",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Starting Soon Banner",
-                        "pos": {
-                            "x": 407.5,
-                            "y": 731.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.TestPattern": [],
-                "libobs.show_scene_item.TestPattern": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Test",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 5,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "TestPattern",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
+                "color1": 4281742649,
+                "color2": 4281742649,
+                "font": {
+                    "face": "Exo 2 Medium",
+                    "flags": 2,
+                    "size": 150,
+                    "style": "Italic"
+                },
+                "log_lines": 4,
+                "text": "STARTING SOON"
             },
             "sync": 0,
             "volume": 1.0
@@ -600,26 +594,11 @@
     "transition_duration": 300,
     "transitions": [
         {
-            "id": "swipe_transition",
-            "name": "Swipe",
-            "settings": {
-                "direction": "up",
-                "swipe_in": false
-            }
-        },
-        {
-            "id": "fade_to_color_transition",
-            "name": "Fade to Color",
-            "settings": {
-                "color": 4294967295,
-                "switch_point": 50
-            }
-        },
-        {
             "id": "obs_stinger_transition",
-            "name": "Stinger NATRON",
+            "name": "Logo-Swipe",
             "settings": {
-                "path": "E:/Videos/ToolboxGraphics/Swipe1/swipe1.webm",
+                "audio_fade_style": 1,
+                "path": "/srv/stream/toolbox/streamassets/assets/transitions/Swipe/swipe.webm",
                 "tp_type": 1,
                 "transition_point": 30
             }
