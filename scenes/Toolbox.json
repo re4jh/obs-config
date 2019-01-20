@@ -53,7 +53,7 @@
         "sync": 0,
         "volume": 0.0
     },
-    "current_program_scene": "Test",
+    "current_program_scene": "3D Printers",
     "current_scene": "Test",
     "current_transition": "Stinger NATRON",
     "groups": [],
@@ -93,16 +93,13 @@
     "scaling_off_y": 0.0,
     "scene_order": [
         {
-            "name": "Left Screen"
-        },
-        {
-            "name": "Left Screen Blurred"
-        },
-        {
             "name": "Test"
         },
         {
             "name": "Starting Soon"
+        },
+        {
+            "name": "3D Printers"
         }
     ],
     "sources": [
@@ -112,19 +109,243 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
+            "id": "text_ft2_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "LowerThird",
+            "name": "Starting Soon Banner",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "E:/Videos/ToolboxGraphics/LowerThird.png",
-                "unload": true
+                "color1": 4281742649,
+                "color2": 4281742649,
+                "font": {
+                    "face": "Exo 2 Medium",
+                    "flags": 2,
+                    "size": 150,
+                    "style": "Italic"
+                },
+                "log_lines": 4,
+                "text": "STARTING SOON"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Replicator",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "clear_on_media_end": false,
+                "hw_decode": true,
+                "input": "http://replicator.tbbs.me/webcam/?action=stream",
+                "input_format": "mpjpeg",
+                "is_local_file": false
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "CTC",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "clear_on_media_end": false,
+                "hw_decode": true,
+                "input": "http://ctc.tbbs.me/webcam/?action=stream",
+                "input_format": "mpjpeg",
+                "is_local_file": false
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.CTC": [],
+                "libobs.hide_scene_item.Multec": [],
+                "libobs.hide_scene_item.Replicator": [],
+                "libobs.show_scene_item.CTC": [],
+                "libobs.show_scene_item.Multec": [],
+                "libobs.show_scene_item.Replicator": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "3D Printers",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 3,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Multec",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Replicator",
+                        "pos": {
+                            "x": 640.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 480.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": false,
+                        "name": "CTC",
+                        "pos": {
+                            "x": 1280.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Multec",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "clear_on_media_end": false,
+                "hw_decode": true,
+                "input": "http://multec.tbbs.me/webcam/?action=stream",
+                "input_format": "mpjpeg",
+                "is_local_file": false
             },
             "sync": 0,
             "volume": 1.0
@@ -146,43 +367,8 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "E:/Videos/ToolboxGraphics/img_1920x1080_3x16bit_RGB_color_SMPTE_RP_219_2002.png"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_gdiplus",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Starting Soon Text",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "align": "center",
-                "chatlog": false,
-                "color": 4281742649,
-                "extents": false,
-                "font": {
-                    "face": "Exo 2",
-                    "flags": 3,
-                    "size": 150,
-                    "style": "Semi Bold Italic"
-                },
-                "gradient": false,
-                "opacity": 100,
-                "outline": false,
-                "text": "STARTING SOON",
-                "valign": "center"
+                "file": "/srv/stream/toolbox/streamassets/assets/testimages/img_1920x1080_3x16bit_RGB_color_SMPTE_RP_219_2002.png",
+                "unload": true
             },
             "sync": 0,
             "volume": 1.0
@@ -227,7 +413,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "E:/Videos/ToolboxGraphics/toolbox_logo_1080.png"
+                "file": "/srv/stream/toolbox/streamassets/assets/logo/toolbox_logo_center_1080.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -239,10 +425,10 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Starting Soon Text": [],
+                "libobs.hide_scene_item.Starting Soon Banner": [],
                 "libobs.hide_scene_item.Toolbox Logo 1080p": [],
                 "libobs.hide_scene_item.White": [],
-                "libobs.show_scene_item.Starting Soon Text": [],
+                "libobs.show_scene_item.Starting Soon Banner": [],
                 "libobs.show_scene_item.Toolbox Logo 1080p": [],
                 "libobs.show_scene_item.White": []
             },
@@ -258,7 +444,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 3,
+                "id_counter": 4,
                 "items": [
                     {
                         "align": 5,
@@ -331,219 +517,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
+                        "id": 4,
                         "locked": true,
-                        "name": "Starting Soon Text",
+                        "name": "Starting Soon Banner",
                         "pos": {
-                            "x": 490.0,
-                            "y": 738.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "obs-stream-effects-filter-blur",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Blur",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "Filter.Blur.Size": 14
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "filters": [
-                {
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "obs-stream-effects-filter-blur",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Blur",
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "Filter.Blur.Size": 14
-                    },
-                    "sync": 0,
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
-            "hotkeys": {},
-            "id": "monitor_capture",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Left Blur",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "capture_cursor": true,
-                "monitor": 2
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Left Blur": [],
-                "libobs.show_scene_item.Left Blur": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Left Screen Blurred",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 3,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "Left Blur",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "monitor_capture",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Left",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "monitor": 2
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Left": [],
-                "libobs.show_scene_item.Left": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Left Screen",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 1,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Left",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 407.5,
+                            "y": 731.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -566,9 +545,7 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.LowerThird": [],
                 "libobs.hide_scene_item.TestPattern": [],
-                "libobs.show_scene_item.LowerThird": [],
                 "libobs.show_scene_item.TestPattern": []
             },
             "id": "scene",
@@ -583,7 +560,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 3,
+                "id_counter": 5,
                 "items": [
                     {
                         "align": 5,
@@ -601,35 +578,6 @@
                         "id": 2,
                         "locked": true,
                         "name": "TestPattern",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "LowerThird",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
