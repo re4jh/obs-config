@@ -1,32 +1,4 @@
 {
-    "AuxAudioDevice1": {
-        "balance": 0.5,
-        "deinterlace_field_order": 0,
-        "deinterlace_mode": 0,
-        "enabled": true,
-        "flags": 0,
-        "hotkeys": {
-            "libobs.mute": [],
-            "libobs.push-to-mute": [],
-            "libobs.push-to-talk": [],
-            "libobs.unmute": []
-        },
-        "id": "wasapi_input_capture",
-        "mixers": 0,
-        "monitoring_type": 0,
-        "muted": false,
-        "name": "Mic/Aux",
-        "private_settings": {},
-        "push-to-mute": false,
-        "push-to-mute-delay": 0,
-        "push-to-talk": false,
-        "push-to-talk-delay": 0,
-        "settings": {
-            "device_id": "default"
-        },
-        "sync": 0,
-        "volume": 0.0
-    },
     "DesktopAudioDevice1": {
         "balance": 0.5,
         "deinterlace_field_order": 0,
@@ -39,12 +11,15 @@
             "libobs.push-to-talk": [],
             "libobs.unmute": []
         },
-        "id": "wasapi_output_capture",
-        "mixers": 0,
+        "id": "pulse_output_capture",
+        "mixers": 255,
         "monitoring_type": 0,
-        "muted": false,
-        "name": "Desktop Audio",
-        "private_settings": {},
+        "muted": true,
+        "name": "Desktop‐Audio",
+        "prev_ver": 419430403,
+        "private_settings": {
+            "volume_locked": false
+        },
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
@@ -53,11 +28,12 @@
             "device_id": "default"
         },
         "sync": 0,
-        "volume": 0.0
+        "versioned_id": "pulse_output_capture",
+        "volume": 1.0
     },
-    "current_program_scene": "3D Printers",
-    "current_scene": "CAM 3 (Room)",
-    "current_transition": "Logo-Swipe",
+    "current_program_scene": "Szene",
+    "current_scene": "Szene",
+    "current_transition": "Schnitt",
     "groups": [],
     "modules": {
         "auto-scene-switcher": {
@@ -70,29 +46,39 @@
         "output-timer": {
             "autoStartRecordTimer": false,
             "autoStartStreamTimer": false,
+            "pauseRecordTimer": true,
             "recordTimerHours": 0,
             "recordTimerMinutes": 0,
-            "recordTimerSeconds": 0,
+            "recordTimerSeconds": 30,
             "streamTimerHours": 0,
             "streamTimerMinutes": 0,
-            "streamTimerSeconds": 0
+            "streamTimerSeconds": 30
         },
         "scripts-tool": []
     },
-    "name": "Toolbox",
+    "name": "Unbenannt",
     "preview_locked": false,
     "quick_transitions": [
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
-            "id": 7,
-            "name": "Logo-Swipe"
+            "id": 1,
+            "name": "Schnitt"
         },
         {
             "duration": 300,
+            "fade_to_black": false,
             "hotkeys": [],
-            "id": 8,
-            "name": "Schnitt"
+            "id": 2,
+            "name": "Überblende"
+        },
+        {
+            "duration": 300,
+            "fade_to_black": true,
+            "hotkeys": [],
+            "id": 3,
+            "name": "Überblende"
         }
     ],
     "saved_projectors": [],
@@ -102,37 +88,7 @@
     "scaling_off_y": 0.0,
     "scene_order": [
         {
-            "name": "Test"
-        },
-        {
-            "name": "Starting Soon"
-        },
-        {
-            "name": "3D Printers"
-        },
-        {
-            "name": "CAM 1 (Closeup)"
-        },
-        {
-            "name": "CAM 2 (Presenter)"
-        },
-        {
-            "name": "CAM 3 (Room)"
-        },
-        {
-            "name": "HDMI"
-        },
-        {
-            "name": "HDMI + Closeup"
-        },
-        {
-            "name": "HDMI + Room"
-        },
-        {
-            "name": "Room + HDMI"
-        },
-        {
-            "name": "Closeup+HDMI"
+            "name": "Szene"
         }
     ],
     "sources": [
@@ -144,73 +100,17 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.show_scene_item.CAMERA 3 (+Audio)": []
+                "libobs.hide_scene_item.beamer": [],
+                "libobs.hide_scene_item.camera": [],
+                "libobs.show_scene_item.beamer": [],
+                "libobs.show_scene_item.camera": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "CAM 3 (Room)",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 9,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 9,
-                        "locked": false,
-                        "name": "CAMERA 3 (+Audio)",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.TestPattern": [],
-                "libobs.show_scene_item.TestPattern": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Test",
+            "name": "Szene",
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -220,361 +120,6 @@
                 "custom_size": false,
                 "id_counter": 5,
                 "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "TestPattern",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Starting Soon Banner": [],
-                "libobs.hide_scene_item.Toolbox Logo 1080p": [],
-                "libobs.hide_scene_item.White": [],
-                "libobs.show_scene_item.Starting Soon Banner": [],
-                "libobs.show_scene_item.Toolbox Logo 1080p": [],
-                "libobs.show_scene_item.White": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Starting Soon",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 4,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "White",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Toolbox Logo 1080p",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Starting Soon Banner",
-                        "pos": {
-                            "x": 590.5,
-                            "y": 711.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Toolbox Logo 1080p",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "/srv/stream/toolbox/streamassets/assets/logo/toolbox_logo_center_1080.png"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "color_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "White",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "height": 1080,
-                "width": 1920
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "TestPattern",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "/srv/stream/toolbox/streamassets/assets/testimages/img_1920x1080_3x16bit_RGB_color_SMPTE_RP_219_2002.png",
-                "unload": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "MediaSource.Restart": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Multec",
-            "private_settings": {
-                "mixer_hidden": false
-            },
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "clear_on_media_end": true,
-                "color_range": 0,
-                "hw_decode": true,
-                "input": "http://multec.tbbs.me/webcam/?action=stream",
-                "input_format": "mpjpeg",
-                "is_local_file": false
-            },
-            "sync": 0,
-            "volume": 0.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CTC": [],
-                "libobs.hide_scene_item.Multec": [],
-                "libobs.hide_scene_item.Replicator": [],
-                "libobs.hide_scene_item.STARTING SOON": [],
-                "libobs.hide_scene_item.Toolbox Logo 1080p": [],
-                "libobs.hide_scene_item.White": [],
-                "libobs.show_scene_item.CTC": [],
-                "libobs.show_scene_item.Multec": [],
-                "libobs.show_scene_item.Replicator": [],
-                "libobs.show_scene_item.STARTING SOON": [],
-                "libobs.show_scene_item.Toolbox Logo 1080p": [],
-                "libobs.show_scene_item.White": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "3D Printers",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 7,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": false,
-                        "name": "White",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "Multec",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -590,257 +135,7 @@
                         "group_item_backup": false,
                         "id": 3,
                         "locked": false,
-                        "name": "Replicator",
-                        "pos": {
-                            "x": 640.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 640.0,
-                            "y": 480.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "CTC",
-                        "pos": {
-                            "x": 1280.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 6,
-                        "locked": false,
-                        "name": "STARTING SOON",
-                        "pos": {
-                            "x": 365.0,
-                            "y": 648.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 7,
-                        "locked": false,
-                        "name": "Toolbox Logo 1080p",
-                        "pos": {
-                            "x": 779.0,
-                            "y": -197.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.86458331346511841,
-                            "y": 0.86481481790542603
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "MediaSource.Restart": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "CTC",
-            "private_settings": {
-                "mixer_hidden": false
-            },
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "clear_on_media_end": true,
-                "hw_decode": true,
-                "input": "http://ctc.tbbs.me/webcam/?action=stream",
-                "input_format": "mpjpeg",
-                "is_local_file": false
-            },
-            "sync": 0,
-            "volume": 0.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "MediaSource.Restart": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Replicator",
-            "private_settings": {
-                "mixer_hidden": false
-            },
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "clear_on_media_end": true,
-                "hw_decode": true,
-                "input": "http://replicator.tbbs.me/webcam/?action=stream",
-                "input_format": "mpjpeg",
-                "is_local_file": false
-            },
-            "sync": 0,
-            "volume": 0.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Starting Soon Banner",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4281742649,
-                "color2": 4281742649,
-                "font": {
-                    "face": "Exo 2 Medium",
-                    "flags": 2,
-                    "size": 100,
-                    "style": ""
-                },
-                "log_lines": 4,
-                "text": "STARTING SOON"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CAMERA 1": [],
-                "libobs.hide_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.show_scene_item.CAMERA 1": [],
-                "libobs.show_scene_item.CAMERA 3 (+Audio)": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "CAM 1 (Closeup)",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 5,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": false,
-                        "name": "CAMERA 3 (+Audio)",
+                        "name": "beamer",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -848,219 +143,8 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "CAMERA 1",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 2,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "decklink-input",
-            "mixers": 255,
-            "monitoring_type": 1,
-            "muted": false,
-            "name": "CAMERA 1",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_hash": "5085347_DeckLink Duo 2",
-                "device_name": "DeckLink Duo (4)",
-                "mode_id": -1,
-                "mode_name": "Auto"
-            },
-            "sync": 0,
-            "volume": 0.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CAMERA 2": [],
-                "libobs.show_scene_item.CAMERA 2": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "CAM 2 (Presenter)",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 6,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "CAMERA 2",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "decklink-input",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "CAMERA 2",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_hash": "5085344_DeckLink Duo 2",
-                "device_name": "DeckLink Duo (1)",
-                "mode_id": -1,
-                "mode_name": "Auto"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.hide_scene_item.HDMI_Input": [],
-                "libobs.show_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.show_scene_item.HDMI_Input": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "HDMI",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 5,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": false,
-                        "name": "CAMERA 3 (+Audio)",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1.0015624761581421,
+                            "y": 1.0018517971038818
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1080,16 +164,16 @@
                         "group_item_backup": false,
                         "id": 4,
                         "locked": false,
-                        "name": "HDMI_Input",
+                        "name": "camera",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1267.0,
+                            "y": 713.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.34010416269302368,
+                            "y": 0.33981481194496155
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1097,249 +181,7 @@
                 ]
             },
             "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "STARTING SOON",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4278190080,
-                "color2": 4278190080,
-                "font": {
-                    "face": "Exo 2",
-                    "flags": 3,
-                    "size": 150,
-                    "style": ""
-                },
-                "log_lines": 10,
-                "text": "STARTING SOON"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CAMERA 1": [],
-                "libobs.hide_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.hide_scene_item.HDMI_Input": [],
-                "libobs.show_scene_item.CAMERA 1": [],
-                "libobs.show_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.show_scene_item.HDMI_Input": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "HDMI + Closeup",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 6,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 6,
-                        "locked": false,
-                        "name": "CAMERA 3 (+Audio)",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": false,
-                        "name": "HDMI_Input",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": false,
-                        "name": "CAMERA 1",
-                        "pos": {
-                            "x": 1211.0,
-                            "y": 681.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.36927083134651184,
-                            "y": 0.36944442987442017
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.hide_scene_item.HDMI_Input": [],
-                "libobs.show_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.show_scene_item.HDMI_Input": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "HDMI + Room",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 5,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": false,
-                        "name": "HDMI_Input",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": false,
-                        "name": "CAMERA 3 (+Audio)",
-                        "pos": {
-                            "x": 1236.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.35624998807907104,
-                            "y": 0.35648149251937866
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -1357,20 +199,24 @@
             "id": "decklink-input",
             "mixers": 255,
             "monitoring_type": 0,
-            "muted": false,
-            "name": "HDMI_Input",
+            "muted": true,
+            "name": "beamer",
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "device_hash": "5085345_DeckLink Duo 2",
-                "device_name": "DeckLink Duo (2)",
+                "audio_connection": 1,
+                "device_hash": "5085346_DeckLink Duo 2",
+                "device_name": "DeckLink Duo (3)",
                 "mode_id": -1,
-                "mode_name": "Auto"
+                "mode_name": "Auto",
+                "video_connection": 1
             },
             "sync": 0,
+            "versioned_id": "decklink-input",
             "volume": 1.0
         },
         {
@@ -1389,244 +235,26 @@
             "mixers": 255,
             "monitoring_type": 2,
             "muted": false,
-            "name": "CAMERA 3 (+Audio)",
+            "name": "camera",
+            "prev_ver": 419430403,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "device_hash": "5085346_DeckLink Duo 2",
-                "device_name": "DeckLink Duo (3)",
+                "audio_connection": 1,
+                "device_hash": "5085344_DeckLink Duo 2",
+                "device_name": "DeckLink Duo (1)",
                 "mode_id": -1,
-                "mode_name": "Auto"
+                "mode_name": "Auto",
+                "video_connection": 1
             },
             "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.hide_scene_item.HDMI_Input": [],
-                "libobs.show_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.show_scene_item.HDMI_Input": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Room + HDMI",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 2,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "CAMERA 3 (+Audio)",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "HDMI_Input",
-                        "pos": {
-                            "x": 1049.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.45364582538604736,
-                            "y": 0.45370370149612427
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.CAMERA 1": [],
-                "libobs.hide_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.hide_scene_item.HDMI_Input": [],
-                "libobs.show_scene_item.CAMERA 1": [],
-                "libobs.show_scene_item.CAMERA 3 (+Audio)": [],
-                "libobs.show_scene_item.HDMI_Input": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Closeup+HDMI",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 3,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
-                        "name": "CAMERA 3 (+Audio)",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "CAMERA 1",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": false,
-                        "name": "HDMI_Input",
-                        "pos": {
-                            "x": 1077.0,
-                            "y": 606.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.43906250596046448,
-                            "y": 0.43888887763023376
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
+            "versioned_id": "decklink-input",
             "volume": 1.0
         }
     ],
     "transition_duration": 300,
-    "transitions": [
-        {
-            "id": "obs_stinger_transition",
-            "name": "Logo-Swipe",
-            "settings": {
-                "audio_fade_style": 1,
-                "path": "/srv/stream/toolbox/streamassets/assets/transitions/Swipe/swipe.webm",
-                "tp_type": 1,
-                "transition_point": 30
-            }
-        }
-    ]
+    "transitions": []
 }
